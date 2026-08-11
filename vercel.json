@@ -1,57 +1,35 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "rewrites": [
-    {
-      "source": "/thesis/",
-      "destination": "https://vaibhavjgeo-thesis.vercel.app/"
-    },
-    {
-      "source": "/bhe/",
-      "destination": "https://vaibhavjgeo-bhe.vercel.app/"
-    },
-    {
-      "source": "/geochat/",
-      "destination": "https://vaibhavjgeo-geochat.vercel.app/"
-    },
+  "redirects": [
     {
       "source": "/thesis",
-      "destination": "https://vaibhavjgeo-thesis.vercel.app/"
+      "destination": "https://vaibhavjgeo-thesis.vercel.app",
+      "permanent": true
     },
     {
       "source": "/thesis/:path*",
-      "destination": "https://vaibhavjgeo-thesis.vercel.app/:path*"
+      "destination": "https://vaibhavjgeo-thesis.vercel.app/:path*",
+      "permanent": true
     },
     {
       "source": "/bhe",
-      "destination": "https://vaibhavjgeo-bhe.vercel.app/"
+      "destination": "https://vaibhavjgeo-bhe.vercel.app",
+      "permanent": true
     },
     {
       "source": "/bhe/:path*",
-      "destination": "https://vaibhavjgeo-bhe.vercel.app/:path*"
+      "destination": "https://vaibhavjgeo-bhe.vercel.app/:path*",
+      "permanent": true
     },
     {
       "source": "/geochat",
-      "destination": "https://vaibhavjgeo-geochat.vercel.app/"
+      "destination": "https://vaibhavjgeo-geochat.vercel.app",
+      "permanent": true
     },
     {
       "source": "/geochat/:path*",
-      "destination": "https://vaibhavjgeo-geochat.vercel.app/:path*"
-    },
-    {
-      "source": "/api/chat",
-      "destination": "https://vaibhavjgeo-geochat.vercel.app/api/chat"
-    },
-    {
-      "source": "/api/recommend",
-      "destination": "https://vaibhavjgeo-bhe.vercel.app/api/recommend"
-    },
-    {
-      "source": "/api/chat/",
-      "destination": "https://vaibhavjgeo-geochat.vercel.app/api/chat"
-    },
-    {
-      "source": "/api/recommend/",
-      "destination": "https://vaibhavjgeo-bhe.vercel.app/api/recommend"
+      "destination": "https://vaibhavjgeo-geochat.vercel.app/:path*",
+      "permanent": true
     }
   ]
 }
