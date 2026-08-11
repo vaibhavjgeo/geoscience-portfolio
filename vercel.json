@@ -1,14 +1,45 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "trailingSlash": true,
   "rewrites": [
-    { "source": "/thesis/", "destination": "https://vaibhavjgeo-thesis.vercel.app/" },
-    { "source": "/thesis/:path*", "destination": "https://vaibhavjgeo-thesis.vercel.app/:path*" },
-    { "source": "/bhe/", "destination": "https://vaibhavjgeo-bhe.vercel.app/" },
-    { "source": "/bhe/:path*", "destination": "https://vaibhavjgeo-bhe.vercel.app/:path*" },
-    { "source": "/geochat/", "destination": "https://vaibhavjgeo-geochat.vercel.app/" },
-    { "source": "/geochat/:path*", "destination": "https://vaibhavjgeo-geochat.vercel.app/:path*" },
-    { "source": "/api/chat", "destination": "https://vaibhavjgeo-geochat.vercel.app/api/chat" },
-    { "source": "/api/recommend", "destination": "https://vaibhavjgeo-bhe.vercel.app/api/recommend" }
+    {
+      "source": "/thesis",
+      "destination": "https://vaibhavjgeo-thesis.vercel.app/"
+    },
+    {
+      "source": "/thesis/:path*",
+      "destination": "https://vaibhavjgeo-thesis.vercel.app/:path*"
+    },
+    {
+      "source": "/bhe",
+      "destination": "https://vaibhavjgeo-bhe.vercel.app/"
+    },
+    {
+      "source": "/bhe/:path*",
+      "destination": "https://vaibhavjgeo-bhe.vercel.app/:path*"
+    },
+    {
+      "source": "/geochat",
+      "destination": "https://vaibhavjgeo-geochat.vercel.app/"
+    },
+    {
+      "source": "/geochat/:path*",
+      "destination": "https://vaibhavjgeo-geochat.vercel.app/:path*"
+    },
+    {
+      "source": "/api/chat",
+      "destination": "https://vaibhavjgeo-geochat.vercel.app/api/chat"
+    },
+    {
+      "source": "/api/recommend",
+      "destination": "https://vaibhavjgeo-bhe.vercel.app/api/recommend"
+    },
+    {
+      "source": "/api/chat/",
+      "destination": "https://vaibhavjgeo-geochat.vercel.app/api/chat"
+    },
+    {
+      "source": "/api/recommend/",
+      "destination": "https://vaibhavjgeo-bhe.vercel.app/api/recommend"
+    }
   ]
 }
