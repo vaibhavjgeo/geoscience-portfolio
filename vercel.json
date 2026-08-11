@@ -2,6 +2,18 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/thesis/",
+      "destination": "https://vaibhavjgeo-thesis.vercel.app/"
+    },
+    {
+      "source": "/bhe/",
+      "destination": "https://vaibhavjgeo-bhe.vercel.app/"
+    },
+    {
+      "source": "/geochat/",
+      "destination": "https://vaibhavjgeo-geochat.vercel.app/"
+    },
+    {
       "source": "/thesis",
       "destination": "https://vaibhavjgeo-thesis.vercel.app/"
     },
