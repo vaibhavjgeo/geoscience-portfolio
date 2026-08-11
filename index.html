@@ -653,7 +653,7 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
     <div class="timeline">
 
       <div class="tl-row">
-        <div class="tl-when">2025</div>
+        <div class="tl-when">12/2024 - 08/2025</div>
         <div class="tl-main">
           <div class="tl-head">
             <div class="tl-head-text">
@@ -661,20 +661,20 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
               <div class="who">Institute of Applied Geosciences (AGW), KIT · PD Dr. K. Menberg &amp; Dr. S. Benz</div>
             </div>
             <div class="tl-tags-side">
-              <span class="tag">python</span>
-              <span class="tag">cmip6 / gee</span>
-              <span class="tag">geothermal</span>
-              <span class="tag">gis</span>
-              <span class="tag">numerical modelling</span>
+              <span class="tag">Python (NumPy / SciPy)</span>
+              <span class="tag">Google Earth Engine</span>
+              <span class="tag">CMIP6 / SSP</span>
+              <span class="tag">QGIS / GeoTIFF</span>
+              <span class="tag">folium / Leaflet</span>
             </div>
           </div>
-          <p class="intro">A climate-sensitive modelling framework quantifying how a warming subsurface reshapes shallow geothermal heat extraction across Germany - developed, computed, and published as an interactive atlas.</p>
+          <p class="intro">A climate-sensitive geothermal modelling framework for Germany - from raw climate rasters to per-pixel physics to a published interactive atlas.</p>
           <ul>
-            <li>Built a <strong>Python semi-analytical model</strong> coupling CMIP6 climate projections with borehole-heat-exchanger physics (moving finite-line-source, Rivera et al. 2017) across Germany at <strong>5 km resolution</strong>; migrated the workflow from MATLAB to Python</li>
-            <li>Processed <strong>8 CMIP6 GCMs</strong> (SSP 2-4.5 &amp; SSP 5-8.5) in Google Earth Engine; solved sustainable extraction rates per pixel with <strong>Brent's method</strong> under SIA 384/6 constraints (T<sub>min</sub> ≥ -1.5 °C)</li>
-            <li>Found subsurface warming of <strong>+1.7 to +3.1 °C by 2100</strong> and mean sustainable extraction of <strong>26.97-47.39 W/m</strong>; sustainable 100-year operation yields 20-35% gains over a depleting 50-year mode</li>
-            <li>Quantified ensemble uncertainty (mean, P25, P50, P75) and published results as <strong>interactive folium/Leaflet maps</strong>, a feasibility tool, and a grounded AI assistant (see Featured Work)</li>
-            <li><strong>Publication:</strong> Jaiswal, V. (2025), KIT. <a href="https://doi.org/10.5281/zenodo.20540260" target="_blank" rel="noopener">doi:10.5281/zenodo.20540260</a></li>
+            <li>Developed a <strong>semi-analytical heat-transport model</strong> in Python implementing <strong>moving finite-line-source (MFLS) theory</strong> (Rivera et al., 2017) with seasonal ground-surface signals and borehole thermal resistance (H = 150 m, λ = 2.5 W/m·K, R<sub>b</sub> = 0.15 m·K/W); migrated the entire workflow from <strong>MATLAB to Python</strong> for automated climate-data integration</li>
+            <li>Engineered a <strong>geospatial data pipeline</strong> in Google Earth Engine processing <strong>8 CMIP6 GCMs</strong> (BCC, CanESM, GFDL, GISS, HadGEM, IPSL, MIROC, MPI) under <strong>SSP 2-4.5 and SSP 5-8.5</strong> to a harmonized 5 km EPSG:4326 grid, exported as analysis-ready GeoTIFFs</li>
+            <li>Solved <strong>maximum sustainable extraction rates per pixel</strong> with Brent's root-finding method (<strong>scipy.optimize</strong>) under the SIA 384/6 constraint (T<sub>min</sub> ≥ -1.5 °C) for 50-year, 100-year, and 100-year-sustainable operating horizons</li>
+            <li>Quantified <strong>climate-driven subsurface warming of +1.7 to +3.1 °C by 2100</strong> and mean sustainable extraction of <strong>26.97-47.39 W/m</strong>; showed sustainable 100-year operation yields <strong>20-35% gains</strong> over depleting 50-year operation, with ensemble uncertainty captured across percentiles (mean, P25, P50, P75)</li>
+            <li>Published the results as <strong>24 interactive folium/Leaflet map layers</strong>, a site-feasibility tool, and a grounded AI assistant (see Featured Work) - <strong>Publication:</strong> Jaiswal, V. (2025), KIT. <a href="https://doi.org/10.5281/zenodo.20540260" target="_blank" rel="noopener">doi:10.5281/zenodo.20540260</a></li>
           </ul>
         </div>
       </div>
@@ -689,17 +689,18 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
             </div>
             <div class="tl-tags-side">
               <span class="tag">Deep Geothermal</span>
-              <span class="tag">Li-Brine</span>
               <span class="tag">Hydrogeochemistry</span>
+              <span class="tag">Direct Lithium Extraction</span>
               <span class="tag">QGIS</span>
               <span class="tag">Power BI</span>
             </div>
           </div>
-          <p class="intro">Industry experience at a working deep-geothermal site: hydrogeochemical sampling and geospatial analysis for direct lithium extraction from geothermal brine.</p>
+          <p class="intro">Industry experience at a producing deep-geothermal plant: brine chemistry, geospatial site assessment, and stakeholder reporting for direct lithium extraction.</p>
           <ul>
-            <li>Conducted <strong>hydrogeochemical sampling from deep geothermal sources</strong> and analyzed geochemical data for two direct-lithium-extraction research projects (<strong>Li+Fluids, UnLimited</strong>)</li>
-            <li>Performed <strong>geospatial analysis in QGIS</strong> to support geothermal systems and site assessment across Germany</li>
-            <li>Produced <strong>5+ technical reports</strong>, built Power BI dashboards, and supported JORC-study documentation and environmental compliance</li>
+            <li>Conducted <strong>hydrogeochemical sampling of deep geothermal brines</strong> at the EnBW Bruchsal plant and analyzed geochemical datasets for two <strong>direct-lithium-extraction research projects (Li+Fluids, UnLimited)</strong> - fluid chemistry as the resource</li>
+            <li>Performed <strong>geospatial analysis in QGIS</strong> (site suitability, spatial data integration) supporting geothermal-system assessment across Germany</li>
+            <li>Built <strong>interactive Power BI dashboards</strong> turning plant and project data into decision-ready views for engineers and management</li>
+            <li>Authored <strong>5+ technical reports</strong> and supported <strong>JORC-study documentation</strong>, environmental compliance, and cross-team project coordination</li>
           </ul>
         </div>
       </div>
@@ -713,17 +714,19 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
               <div class="who">Institute of Applied Geosciences, KIT · Germany</div>
             </div>
             <div class="tl-tags-side">
-              <span class="tag">Thermal Lab</span>
-              <span class="tag">Petrography</span>
-              <span class="tag">Data Structuring</span>
-              <span class="tag">Scientific Figures</span>
+              <span class="tag">Thermal Petrophysics</span>
+              <span class="tag">Thin-Section Petrography</span>
+              <span class="tag">ImageJ</span>
+              <span class="tag">Excel / Word</span>
+              <span class="tag">CorelDraw</span>
             </div>
           </div>
-          <p class="intro">Research support in the engineering-geology group: thermal-property measurements on BHE materials, petrography, and publication-grade data work.</p>
+          <p class="intro">Research support in the engineering-geology group: thermal-property measurement of geothermal materials, petrography, and publication-grade data curation.</p>
           <ul>
-            <li>Performed laboratory analyses on <strong>borehole-heat-exchanger and grouting materials</strong> - thermal conductivity, porosity, saturation, grain and wet-bulk density - using <strong>Isomet 2114 and Hot Disk TPS1500</strong></li>
-            <li>Carried out <strong>petrographic and thin-section analysis</strong> (optical microscopy, ImageJ) for grain-size and textural characterization</li>
-            <li>Structured and evaluated <strong>100+ research datasets</strong> and designed <strong>40+ maps and scientific figures</strong> (CorelDraw) for publications</li>
+            <li>Measured <strong>thermal and physical properties of borehole-heat-exchanger and grouting materials</strong> - thermal conductivity, porosity, saturation, grain and wet-bulk density - operating <strong>Isomet 2114 and Hot Disk TPS1500</strong> instruments</li>
+            <li>Performed <strong>petrographic and thin-section analysis</strong> with optical microscopy and <strong>ImageJ</strong> for quantitative grain-size and textural characterization</li>
+            <li>Structured, documented, and evaluated <strong>100+ research datasets</strong> in Excel and Word, building reusable data-organization templates adopted by the lab</li>
+            <li>Designed and digitized <strong>40+ maps, diagrams, and scientific figures</strong> in CorelDraw for peer-reviewed publications and presentations</li>
           </ul>
         </div>
       </div>
