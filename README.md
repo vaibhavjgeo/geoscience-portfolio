@@ -94,6 +94,7 @@ I'm Vaibhav, a geoscientist (M.Sc. Applied Geosciences, KIT) modelling climate-c
 
 ### The other repos in this portfolio
 
+- [heatloop](https://github.com/vaibhavjgeo/heatloop) - data-centre waste heat x geothermal siting platform (Next.js, TypeScript, RAG, agentic AI)
 - [master-thesis](https://github.com/vaibhavjgeo/master-thesis) - CMIP6 x geothermal modelling results as an interactive atlas
 - [bhe-recommender](https://github.com/vaibhavjgeo/bhe-recommender) - click-anywhere geothermal feasibility tool with LLM interpretation and PDF export
 - [geochat](https://github.com/vaibhavjgeo/geochat) - AI assistant grounded in my thesis research
