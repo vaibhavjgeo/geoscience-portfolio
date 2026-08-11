@@ -369,6 +369,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       <nav id="primary-nav">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="https://vaibhavjgeo-heatloop.vercel.app" target="_blank" rel="noopener">HeatLoop</a></li>
           <li><a href="/thesis/">Master Thesis</a></li>
           <li><a href="/bhe/">BHE Recommender</a></li>
           <li><a href="/geochat/">GeoChat</a></li>
@@ -414,7 +415,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       <div class="about-text">
         <p>I'm a geologist at the core - trained on outcrops, hand samples, and thin sections - who grew into a <strong>computational geoscientist</strong>. That combination is my edge: I understand what the data physically means before I write a line of code against it. I've mapped in the Alps and the Aegean, sampled deep geothermal brines, measured thermal properties of rock and grout on lab instruments, and characterized textures under the microscope.</p>
         <p>The way I work is a pipeline. It starts with <strong>raw earth data</strong> - climate rasters, satellite products, borehole records, lab measurements, field observations. I clean and harmonize it (<strong>Python: NumPy, SciPy, pandas, geopandas, rasterio; Google Earth Engine; QGIS</strong>), push it through <strong>physics-based and geostatistical models</strong> - heat transport, root-finding optimization, scenario ensembles - and quantify what we actually know versus what is uncertainty. Then I make the results <strong>usable</strong>: interactive web maps (folium/Leaflet), dashboards (Power BI), automated reports, and grounded AI assistants, so a stakeholder can explore the science instead of reading about it.</p>
-        <p>I'm rigorous about honest numbers, fluent in modern tooling (<strong>Git, SQL, MATLAB-to-Python migrations, AI-assisted development</strong>), and fast at learning whatever a problem needs - this entire portfolio, four deployed apps at €0/month, is the proof. I'm open to <strong>geoscience, geospatial data science, and geoenergy roles</strong> - in industry or research, including PhD positions - where rigorous earth science meets modern data engineering.</p>
+        <p>I'm rigorous about honest numbers, fluent in modern tooling (<strong>Git, SQL, MATLAB-to-Python migrations, AI-assisted development</strong>), and fast at learning whatever a problem needs - this entire portfolio, five deployed apps at €0/month, is the proof. I'm open to <strong>geoscience, geospatial data science, and geoenergy roles</strong> - in industry or research, including PhD positions - where rigorous earth science meets modern data engineering.</p>
       </div>
     </div>
   </div>
@@ -429,9 +430,22 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       <p class="section-sub">Climate-geothermal modelling, geospatial pipelines, and decision-support tools. All live, all open, all built on open data.</p>
     </div>
     <div class="work-grid">
+      <a href="https://vaibhavjgeo-heatloop.vercel.app" target="_blank" rel="noopener" class="work-card">
+        <div class="work-num">PROJECT / 01</div>
+        <h3>HeatLoop<br><em>Data-centre waste heat × geothermal siting</em></h3>
+        <p>Germany's Energy Efficiency Act forces new data centres to reuse 10-20% of their waste heat from 2026 - HeatLoop turns that policy into an explorable tool. Assess any of 270+ real facilities (OpenStreetMap): continuous waste heat, homes-heatable equivalent, EnEfG targets in absolute numbers. Or click anywhere to score a new site on subsurface potential (my thesis's 5 km climate-geothermal grid), population heat demand, and infrastructure synergy - while a multi-step AI agent (plan → tools → retrieve → draft → critic) streams its reasoning and writes a report grounded in a RAG knowledge base of the law and the science.</p>
+        <div class="work-tags">
+          <span class="tag">next.js</span><span class="tag">typescript</span><span class="tag">react</span><span class="tag">node.js serverless</span><span class="tag">agentic ai</span><span class="tag">rag</span><span class="tag">groq / llama 3.3</span><span class="tag">leaflet</span><span class="tag">enefg</span><span class="tag">open data</span>
+        </div>
+        <div class="work-foot">
+          <span>vaibhavjgeo-heatloop.vercel.app</span>
+          <span class="work-arrow">→</span>
+        </div>
+      </a>
+
 
       <a href="/thesis/" target="_blank" rel="noopener" class="work-card">
-        <div class="work-num">PROJECT / 01</div>
+        <div class="work-num">PROJECT / 02</div>
         <h3>Climate x Geothermal Potential<br><em>M.Sc. thesis modelling framework</em></h3>
         <p>How much does climate change alter shallow geothermal yield? A Python framework couples 8 CMIP6 global climate models (SSP 2-4.5 &amp; SSP 5-8.5, processed in Google Earth Engine) with finite-line-source BHE theory across Germany at 5 km resolution. Sustainable extraction rates solved per pixel with Brent's method; uncertainty captured via ensemble percentiles. Result: 1.7-3.1 °C mean ground warming boosts extraction efficiency ~8-24% by 2100 - each 1 °C substitutes ~4 m of drilling. Published as an interactive map portfolio.</p>
         <div class="work-tags">
@@ -444,7 +458,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       </a>
 
       <a href="/bhe/" target="_blank" rel="noopener" class="work-card">
-        <div class="work-num">PROJECT / 02</div>
+        <div class="work-num">PROJECT / 03</div>
         <h3>BHE Recommender<br><em>Geothermal feasibility, one click</em></h3>
         <p>Click anywhere on the map and get an instant borehole-heat-exchanger feasibility report: a cost and yield model runs in the browser, an LLM writes the plain-language geological interpretation, and a downloadable PDF report is generated on the spot. Science-to-stakeholder translation with no backend to maintain.</p>
         <div class="work-tags">
@@ -457,7 +471,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       </a>
 
       <a href="/geochat/" target="_blank" rel="noopener" class="work-card">
-        <div class="work-num">PROJECT / 03</div>
+        <div class="work-num">PROJECT / 04</div>
         <h3>GeoChat<br><em>AI assistant grounded in my research</em></h3>
         <p>A chatbot that answers questions about my thesis and shallow geothermal science - grounded in a curated knowledge base injected server-side, so answers stay on the science instead of hallucinating. Retrieval-style context injection, conversation memory, streaming replies. A working example of how AI can make research accessible.</p>
         <div class="work-tags">
@@ -939,6 +953,7 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
         <h5>Navigate</h5>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="https://vaibhavjgeo-heatloop.vercel.app" target="_blank" rel="noopener">HeatLoop</a></li>
           <li><a href="/thesis/">Master Thesis</a></li>
           <li><a href="/bhe/">BHE Recommender</a></li>
           <li><a href="/geochat/">GeoChat</a></li>
