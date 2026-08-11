@@ -56,7 +56,7 @@
   "knowsLanguage": ["English", "Hindi", "German"],
   "address": { "@type": "PostalAddress", "addressLocality": "Karlsruhe", "addressCountry": "DE" },
   "url": "https://vaibhavjgeo.vercel.app",
-  "sameAs": ["https://github.com/vaibhavjgeo", "https://github.com/VaibhavJ97", "https://www.linkedin.com/in/vaibhavgeo/"]
+  "sameAs": ["https://github.com/vaibhavjgeo", "https://github.com/vaibhavjgeo", "https://www.linkedin.com/in/vaibhavgeo/"]
 }
 </script>
 
@@ -369,10 +369,10 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       <nav id="primary-nav">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="https://vaibhavj97-thesis.vercel.app">Master Thesis</a></li>
-          <li><a href="https://vaibhavj97-thesis.vercel.app/map-fullscreen.html">Map Explorer</a></li>
-          <li><a href="https://vaibhavj97-bhe.vercel.app">BHE Recommender</a></li>
-          <li><a href="https://vaibhavj97-geochat.vercel.app">GeoChat</a></li>
+          <li><a href="/thesis/">Master Thesis</a></li>
+          <li><a href="/thesis/map-fullscreen.html">Map Explorer</a></li>
+          <li><a href="/bhe/">BHE Recommender</a></li>
+          <li><a href="/geochat/">GeoChat</a></li>
         </ul>
       </nav>
       <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
@@ -409,7 +409,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
   <div class="wrap">
     <div class="about-grid">
       <div class="about-left">
-        <img src="https://vaibhavj97.vercel.app/profile-photo.png" alt="Vaibhav Jaiswal - Geoscientist" class="about-photo-img" loading="lazy" />
+        <img src="profile-photo.png" alt="Vaibhav Jaiswal - Geoscientist" class="about-photo-img" loading="lazy" />
         <div class="about-label">§ About</div>
       </div>
       <div class="about-text">
@@ -431,7 +431,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
     </div>
     <div class="work-grid">
 
-      <a href="https://vaibhavj97-thesis.vercel.app" target="_blank" rel="noopener" class="work-card">
+      <a href="/thesis/" target="_blank" rel="noopener" class="work-card">
         <div class="work-num">PROJECT / 01</div>
         <h3>Climate x Geothermal Potential<br><em>M.Sc. thesis modelling framework</em></h3>
         <p>How much does climate change alter shallow geothermal yield? A Python framework couples 8 CMIP6 global climate models (SSP 2-4.5 &amp; SSP 5-8.5, processed in Google Earth Engine) with finite-line-source BHE theory across Germany at 5 km resolution. Sustainable extraction rates solved per pixel with Brent's method; uncertainty captured via ensemble percentiles. Result: 1.7-3.1 °C mean ground warming boosts extraction efficiency ~8-24% by 2100 - each 1 °C substitutes ~4 m of drilling. Published as an interactive map portfolio.</p>
@@ -439,12 +439,12 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
           <span class="tag">python</span><span class="tag">cmip6</span><span class="tag">google earth engine</span><span class="tag">ssp scenarios</span><span class="tag">scipy.optimize</span><span class="tag">finite-line-source</span><span class="tag">folium / leaflet</span><span class="tag">geotiff</span><span class="tag">uncertainty analysis</span>
         </div>
         <div class="work-foot">
-          <span>vaibhavj97-thesis.vercel.app</span>
+          <span>vaibhavjgeo.vercel.app/thesis</span>
           <span class="work-arrow">→</span>
         </div>
       </a>
 
-      <a href="https://vaibhavj97-thesis.vercel.app/map-fullscreen.html" target="_blank" rel="noopener" class="work-card">
+      <a href="/thesis/map-fullscreen.html" target="_blank" rel="noopener" class="work-card">
         <div class="work-num">PROJECT / 02</div>
         <h3>Germany Map Explorer<br><em>Interactive climate-scenario atlas</em></h3>
         <p>The thesis results as a fullscreen geospatial explorer: heat-extraction rates and power output for 50-year, 100-year, and 100-year-sustainable horizons, toggleable per climate scenario and ensemble percentile (mean, P25, P50, P75). A Python pipeline (NumPy, SciPy) exports 24 JSON layers rendered live with Leaflet.js and chroma-js - a full scientific atlas served from static hosting.</p>
@@ -452,12 +452,12 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
           <span class="tag">geospatial visualization</span><span class="tag">leaflet.js</span><span class="tag">chroma-js</span><span class="tag">json pipeline</span><span class="tag">numpy / scipy</span><span class="tag">epsg:4326</span><span class="tag">scenario comparison</span>
         </div>
         <div class="work-foot">
-          <span>vaibhavj97-thesis.vercel.app/map-fullscreen</span>
+          <span>vaibhavjgeo.vercel.app/thesis/map-fullscreen</span>
           <span class="work-arrow">→</span>
         </div>
       </a>
 
-      <a href="https://vaibhavj97-bhe.vercel.app" target="_blank" rel="noopener" class="work-card">
+      <a href="/bhe/" target="_blank" rel="noopener" class="work-card">
         <div class="work-num">PROJECT / 03</div>
         <h3>BHE Recommender<br><em>Geothermal feasibility, one click</em></h3>
         <p>Click anywhere on the map and get an instant borehole-heat-exchanger feasibility report: a cost and yield model runs in the browser, an LLM writes the plain-language geological interpretation, and a downloadable PDF report is generated on the spot. Science-to-stakeholder translation with no backend to maintain.</p>
@@ -465,12 +465,12 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
           <span class="tag">shallow geothermal</span><span class="tag">feasibility modelling</span><span class="tag">leaflet</span><span class="tag">javascript</span><span class="tag">llm interpretation</span><span class="tag">jspdf</span><span class="tag">geojson</span>
         </div>
         <div class="work-foot">
-          <span>vaibhavj97-bhe.vercel.app</span>
+          <span>vaibhavjgeo.vercel.app/bhe</span>
           <span class="work-arrow">→</span>
         </div>
       </a>
 
-      <a href="https://vaibhavj97-geochat.vercel.app" target="_blank" rel="noopener" class="work-card">
+      <a href="/geochat/" target="_blank" rel="noopener" class="work-card">
         <div class="work-num">PROJECT / 04</div>
         <h3>GeoChat<br><em>AI assistant grounded in my research</em></h3>
         <p>A chatbot that answers questions about my thesis and shallow geothermal science - grounded in a curated knowledge base injected server-side, so answers stay on the science instead of hallucinating. Retrieval-style context injection, conversation memory, streaming replies. A working example of how AI can make research accessible.</p>
@@ -478,7 +478,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
           <span class="tag">science communication</span><span class="tag">llm</span><span class="tag">context injection</span><span class="tag">rag pattern</span><span class="tag">node.js serverless</span><span class="tag">gemini api</span>
         </div>
         <div class="work-foot">
-          <span>vaibhavj97-geochat.vercel.app</span>
+          <span>vaibhavjgeo.vercel.app/geochat</span>
           <span class="work-arrow">→</span>
         </div>
       </a>
@@ -922,10 +922,10 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
         <h5>Navigate</h5>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="https://vaibhavj97-thesis.vercel.app">Master Thesis</a></li>
-          <li><a href="https://vaibhavj97-thesis.vercel.app/map-fullscreen.html">Map Explorer</a></li>
-          <li><a href="https://vaibhavj97-bhe.vercel.app">BHE Recommender</a></li>
-          <li><a href="https://vaibhavj97-geochat.vercel.app">GeoChat</a></li>
+          <li><a href="/thesis/">Master Thesis</a></li>
+          <li><a href="/thesis/map-fullscreen.html">Map Explorer</a></li>
+          <li><a href="/bhe/">BHE Recommender</a></li>
+          <li><a href="/geochat/">GeoChat</a></li>
         </ul>
       </div>
       <div class="footer-col">
