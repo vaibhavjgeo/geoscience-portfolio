@@ -393,11 +393,13 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
   <div class="wrap">
     <div class="hero-eyebrow">Geoscientist · Geospatial Data Science · Climate &amp; Subsurface Modelling · Python / GIS</div>
     <h1>Hi, I'm Vaibhav. I take earth-science questions from <em>field and lab to model and map</em> - and turn them into tools people can use.</h1>
-    <p class="lead">I'm a geoscientist (M.Sc. Applied Geosciences, KIT) with an unusually wide toolkit. I map rock in the field and characterize it in the lab - thin-section petrography, hydrogeochemical sampling, thermal-property measurement. I process planetary-scale data - climate model ensembles, satellite rasters, geodata of every format - with <strong>Python, Google Earth Engine, and QGIS</strong>. I build <strong>physics-based numerical models</strong> of the subsurface, quantify their uncertainty with proper statistics, and then do the part most scientists skip: I ship the results as <strong>interactive maps, feasibility tools, and AI-assisted explainers</strong> that anyone can use. Everything below is live, reproducible, and built on open data.</p>
+    <p class="lead">I'm a geoscientist (M.Sc. Applied Geosciences, KIT) with an unusually wide toolkit. I map rock in the field and characterize it in the lab - thin-section petrography, hydrogeochemical sampling, thermal-property measurement. I process planetary-scale data - climate model ensembles, satellite rasters, geodata of every format - with <strong>Python, Google Earth Engine, and QGIS</strong>. I build <strong>physics-based semi-analytical models</strong> of the subsurface and quantify their spread across climate-model ensembles (P25-P75 percentiles - honest about what that does and does not capture), and then do the part most scientists skip: I ship the results as <strong>interactive maps, feasibility tools, and AI-assisted explainers</strong> that anyone can use. Everything below is live, reproducible, and built on open data.</p>
     <div class="hero-cta">
       <a href="#work" class="btn">See my research work</a>
       <a href="https://github.com/vaibhavjgeo" target="_blank" rel="noopener" class="btn btn-ghost">Browse the code</a>
     </div>
+  
+    <p class="hint" style="margin-top:10px;">Data: NASA NEX-GDDP-CMIP6 (native 0.25° ≈ 25 km; tas), SSP 2-4.5 / SSP 5-8.5 · analysis grid EPSG:4326 · thesis: Jaiswal (2025), doi:10.5281/zenodo.20540260.</p>
   </div>
 </section>
 
@@ -447,7 +449,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       <a href="/thesis/" target="_blank" rel="noopener" class="work-card">
         <div class="work-num">PROJECT / 02</div>
         <h3>Climate x Geothermal Potential<br><em>M.Sc. thesis modelling framework</em></h3>
-        <p>How much does climate change alter shallow geothermal yield? A Python framework couples 8 CMIP6 global climate models (SSP 2-4.5 &amp; SSP 5-8.5, processed in Google Earth Engine) with finite-line-source BHE theory across Germany at 5 km resolution. Sustainable extraction rates solved per pixel with Brent's method; uncertainty captured via ensemble percentiles. Result: 1.7-3.1 °C mean ground warming boosts extraction efficiency ~8-24% by 2100 - each 1 °C substitutes ~4 m of drilling. Published as an interactive map portfolio.</p>
+        <p>How much does climate change alter shallow geothermal yield? A Python framework couples near-surface air temperature (tas) from 8 CMIP6 global climate models (SSP 2-4.5 &amp; SSP 5-8.5, processed in Google Earth Engine) with finite-line-source BHE theory across Germany on a 5 km analysis grid (resampled from ~25 km native CMIP6 data). Sustainable extraction rates solved per pixel with Brent's method; uncertainty captured via ensemble percentiles. Result: 1.7-3.1 °C mean ground warming boosts extraction efficiency ~8-24% by 2100 - each 1 °C substitutes ~4 m of drilling (urban central-Europe rule, Rivera et al. 2017). Published as an interactive map portfolio.</p>
         <div class="work-tags">
           <span class="tag">python</span><span class="tag">cmip6</span><span class="tag">google earth engine</span><span class="tag">ssp scenarios</span><span class="tag">scipy.optimize</span><span class="tag">finite-line-source</span><span class="tag">folium / leaflet</span><span class="tag">geotiff</span><span class="tag">uncertainty analysis</span>
         </div>
@@ -473,7 +475,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
       <a href="/geochat/" target="_blank" rel="noopener" class="work-card">
         <div class="work-num">PROJECT / 04</div>
         <h3>GeoChat<br><em>AI assistant grounded in my research</em></h3>
-        <p>A chatbot that answers questions about my thesis and shallow geothermal science - grounded in a curated knowledge base injected server-side, so answers stay on the science instead of hallucinating. Retrieval-style context injection, conversation memory, streaming replies. A working example of how AI can make research accessible.</p>
+        <p>A chatbot that answers questions about my thesis and shallow geothermal science - grounded in a curated knowledge base injected server-side, grounded so answers stay on the science and hallucination is reduced. Retrieval-style context injection, conversation memory, streaming replies. A working example of how AI can make research accessible.</p>
         <div class="work-tags">
           <span class="tag">science communication</span><span class="tag">llm</span><span class="tag">context injection</span><span class="tag">rag pattern</span><span class="tag">node.js serverless</span><span class="tag">gemini api</span>
         </div>
@@ -492,7 +494,7 @@ footer { margin-top: 0; padding: 80px 0 36px; background: var(--ink); color: var
   <div class="wrap">
     <div class="metrics-grid">
       <div class="metric"><div class="metric-val">8</div><div class="metric-lab">CMIP6 climate models</div></div>
-      <div class="metric"><div class="metric-val">5<span class="unit">km</span></div><div class="metric-lab">Model grid resolution</div></div>
+      <div class="metric"><div class="metric-val">5<span class="unit">km</span></div><div class="metric-lab">Analysis grid (from ~25 km CMIP6)</div></div>
       <div class="metric"><div class="metric-val">100<span class="unit">yr</span></div><div class="metric-lab">Simulation horizons</div></div>
       <div class="metric"><div class="metric-val">24</div><div class="metric-lab">Map layers published</div></div>
       <div class="metric"><div class="metric-val">€0</div><div class="metric-lab">Monthly infra cost</div></div>
@@ -684,10 +686,10 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
           </div>
           <p class="intro">A climate-sensitive geothermal modelling framework for Germany - from raw climate rasters to per-pixel physics to a published interactive atlas.</p>
           <ul>
-            <li>Developed a <strong>semi-analytical heat-transport model</strong> in Python implementing <strong>moving finite-line-source (MFLS) theory</strong> (Rivera et al., 2017) with seasonal ground-surface signals and borehole thermal resistance (H = 150 m, λ = 2.5 W/m·K, R<sub>b</sub> = 0.15 m·K/W); migrated the entire workflow from <strong>MATLAB to Python</strong> for automated climate-data integration</li>
-            <li>Engineered a <strong>geospatial data pipeline</strong> in Google Earth Engine processing <strong>8 CMIP6 GCMs</strong> (BCC, CanESM, GFDL, GISS, HadGEM, IPSL, MIROC, MPI) under <strong>SSP 2-4.5 and SSP 5-8.5</strong> to a harmonized 5 km EPSG:4326 grid, exported as analysis-ready GeoTIFFs</li>
+            <li>Developed a <strong>semi-analytical heat-transport model</strong> in Python implementing <strong>finite-line-source theory</strong> with a Cauchy-type upper boundary (Rivera, Blum &amp; Bayer, 2016; MFLS lineage after Molina-Giraldo et al., 2011) with seasonal ground-surface signals and borehole thermal resistance (H = 150 m, λ = 2.5 W/(m·K), R<sub>b</sub> = 0.15 (m·K)/W); migrated the entire workflow from <strong>MATLAB to Python</strong> for automated climate-data integration</li>
+            <li>Engineered a <strong>geospatial data pipeline</strong> in Google Earth Engine processing near-surface air temperature (tas) from <strong>8 CMIP6 GCMs</strong> (BCC-CSM2-MR, CanESM5, GFDL-ESM4, GISS-E2-1-G, HadGEM3-GC31-LL, IPSL-CM6A-LR, MIROC6, MPI-ESM1-2-HR) under <strong>SSP 2-4.5 and SSP 5-8.5</strong> to a harmonized 5 km EPSG:4326 analysis grid (resampled from the native 0.25° ≈ 25 km NEX-GDDP-CMIP6 data), exported as analysis-ready GeoTIFFs</li>
             <li>Solved <strong>maximum sustainable extraction rates per pixel</strong> with Brent's root-finding method (<strong>scipy.optimize</strong>) under the SIA 384/6 constraint (T<sub>min</sub> ≥ -1.5 °C) for 50-year, 100-year, and 100-year-sustainable operating horizons</li>
-            <li>Quantified <strong>climate-driven subsurface warming of +1.7 to +3.1 °C by 2100</strong> and mean sustainable extraction of <strong>26.97-47.39 W/m</strong>; showed sustainable 100-year operation yields <strong>20-35% gains</strong> over depleting 50-year operation, with ensemble uncertainty captured across percentiles (mean, P25, P50, P75)</li>
+            <li>Quantified <strong>climate-driven subsurface warming of +1.7 to +3.1 °C by 2100</strong> and mean sustainable extraction of <strong>~27-47 W/m</strong>; showed sustainable 100-year operation yields <strong>20-35% more</strong> than depleting 50-year operation (a different metric from the 8-24% climate-driven efficiency gain), with ensemble uncertainty captured across percentiles (mean, P25, P50, P75)</li>
             <li>Published the results as <strong>24 interactive folium/Leaflet map layers</strong>, a site-feasibility tool, and a grounded AI assistant (see Featured Work) - <strong>Publication:</strong> Jaiswal, V. (2025), KIT. <a href="https://doi.org/10.5281/zenodo.20540260" target="_blank" rel="noopener">doi:10.5281/zenodo.20540260</a></li>
           </ul>
         </div>
@@ -759,11 +761,11 @@ ee.batch.Export.image.<span class="fn">toDrive</span>(
     <div class="timeline">
 
       <div class="tl-row">
-        <div class="tl-when">2021 - 2026</div>
+        <div class="tl-when">2021 - 2025</div>
         <div class="tl-main">
           <div class="tl-head">
             <div class="tl-head-text">
-              <h3>M.Sc. Applied Geosciences · Grade 2.5</h3>
+              <h3>M.Sc. Applied Geosciences · Grade 2.5 <span style="font-family:var(--font-mono);font-size:12px;color:var(--muted);font-weight:400;">(German scale, 1.0 = best)</span></h3>
               <div class="who">Karlsruhe Institute of Technology (KIT) · Department of Civil Engineering, Geo and Environmental Sciences</div>
             </div>
             <div class="tl-tags-side">
